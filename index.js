@@ -38,7 +38,7 @@ document.addEventListener("click", (e) => {
   effect.className = "teAmoEffect";
   effect.style.left = `${e.clientX}px`;
   effect.style.top = `${e.clientY}px`;
-  effect.innerText = "💖 Te amo 💖";
+  effect.innerText = "💖 Te amo Jiovanna💖";
 
   document.getElementById("clickEffectContainer").appendChild(effect);
 
