@@ -1,0 +1,43 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  background-color: #0b0c10;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#clickEffectContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.teAmoEffect {
+  position: absolute;
+  color: #ff69b4;
+  font-size: 24px;
+  font-weight: bold;
+  animation: fadeOut 1s ease-out forwards;
+  user-select: none;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
